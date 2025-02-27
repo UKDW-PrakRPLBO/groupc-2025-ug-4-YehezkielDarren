@@ -6,7 +6,7 @@ public class Main {
         int resolusi = 1080;
         TV tv = new TV(resolusi);
 
-        Colokan vga = new VGA(10_000, 100, "Samsung");
+        Colokan vga = new VGA(10000, 100, "Samsung");
         tv.connect(vga);
         System.out.println("TV dengan colokan merk " + vga.getMerk() + " dapat menampilkan gambar " + tv.getResolution() +
                 "p");
@@ -16,7 +16,7 @@ public class Main {
         resolusi = 720;
         tv = new TV(resolusi);
 
-        Colokan hdmi = new HDMI(65_000, 100, "Advan");
+        Colokan hdmi = new HDMI(65000, 100, "Advan");
         tv.connect(hdmi);
         System.out.println("TV dengan colokan merk " + hdmi.getMerk() + " dapat menampilkan gambar " + tv.getResolution() +
                 "p");

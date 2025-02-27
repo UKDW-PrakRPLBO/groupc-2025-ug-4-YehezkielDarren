@@ -7,7 +7,7 @@ public class VGA extends Colokan{
 
     @Override
     public double getRealBandwidth() {
-        double ratio= (double) super.getHarga() /30000;
-        return (ratio>1)? ( ratio * super.getPromisedBandwidth()) : super.getPromisedBandwidth();
+        double ratio= (double) getHarga() /30000;
+        return (ratio<1.0)? ( ratio * super.getPromisedBandwidth()) : super.getPromisedBandwidth();
     }
 }

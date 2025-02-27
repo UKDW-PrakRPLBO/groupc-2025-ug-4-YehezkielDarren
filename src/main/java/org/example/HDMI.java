@@ -7,7 +7,7 @@ public class HDMI extends Colokan{
 
     @Override
     public double getRealBandwidth() {
-        double ratio= (double) super.getHarga() /50000;
-        return  (ratio>1)?  ( ratio *  super.getPromisedBandwidth()) :  super.getPromisedBandwidth();
+        double ratio= (double) getHarga() /50000;
+        return  (ratio<1.0)?  ( ratio *  super.getPromisedBandwidth()) :  super.getPromisedBandwidth();
     }
 }

@@ -13,13 +13,13 @@ public abstract class Colokan {
     public abstract double getRealBandwidth();
     // getter n setter
     public String getMerk() {
-        return merk;
+        return this.merk;
     }
     public int getHarga(){
-        return harga;
+        return this.harga;
     }
     public double getPromisedBandwidth(){
-        return promisedBandwidth;
+        return this.promisedBandwidth;
     }
 
     public void setMerek(String mrk){
